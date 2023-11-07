@@ -19,7 +19,7 @@ const categories = [
 
 <template>
   <div>
-    <img src="src/assets/LogoUIC.png" alt="uicLogo">
+    <img src="vue-EntryPass/src/assets//LogoUIC.png" alt="uicLogo">
     <h1>Entry Pass (Welcome)</h1>
     <p>Log in</p>
     <InputText v-model="value1" type="text" size="small" placeholder="UserName" />
@@ -31,4 +31,5 @@ const categories = [
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

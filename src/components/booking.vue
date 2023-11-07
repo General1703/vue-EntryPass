@@ -18,7 +18,7 @@ const categories = [
 
 <template>
   <div>
-    <img src="src/assets/LogoUIC.png" alt="uicLogo">
+    <img src="vue-EntryPass/src/assets//LogoUIC.png" alt="uicLogo">
     <p>First Name:</p>
     <InputText v-model="value1" type="text" size="small" placeholder="Firstname" />
     <p>Last Name:</p>
