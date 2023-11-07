@@ -1,7 +1,6 @@
 <script setup>
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
-import
 
 const categories = [
   {
