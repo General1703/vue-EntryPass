@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <img src="vue-EntryPass/src/assets/LogoUIC.png" alt="uicLogo">
+    <p>Guard View</p>
 
   </div>
 </template>
