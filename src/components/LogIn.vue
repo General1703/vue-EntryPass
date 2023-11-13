@@ -2,19 +2,6 @@
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
 
-
-const categories = [
-  {
-    id: 1,
-    name: "Allowance",
-    description: "From Parents",
-  },
-  {
-    id: 2,
-    name: "Donation",
-    description: "From Friends",
-  }
-];
 </script>
 
 <template>

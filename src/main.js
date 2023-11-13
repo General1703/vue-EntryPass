@@ -5,6 +5,13 @@ import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 
+import PrimeVue from "primevue/config";
+import Menubar from "primevue/menubar";
+import router from "./router";
 
 
-createApp(App).mount('#app')
+createApp(App)
+.use(router)
+.use(PrimeVue, { ripple: true })
+.component("Menubar", Menubar)
+.mount('#app')
