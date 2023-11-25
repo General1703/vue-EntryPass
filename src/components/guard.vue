@@ -64,7 +64,7 @@ const addCategory = () => {
 
 <template>
   <div>
-    <h1>Categories</h1>
+    <h1>Visitor Information</h1>
     <DataTable :value="categories" tableStyle="min-width: 50rem">
       <Column field="id" header="ID"></Column>
       <Column field="name" header="Name"></Column>
