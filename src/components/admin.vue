@@ -20,15 +20,15 @@ const account = ref([
 ]);
 
 const editingAccount = ref(null);
-const newAccount = ref({ incharge: '', office: '' }); // New category object
+const newAccount = ref({ incharge: '', office: '' }); // New category object for incharge and offfice
 
 const editAccount = (accounts) => {
-  editingAccount.value = { ...accounts.data }; // Set editingCategory to the selected category's data
+  editingAccount.value = { ...accounts.data }; // Set editingAccounts to the selected account's data
 };
 
 const saveEditedAccount = () => {
   if (editingAccount.value) {
-    // Update the category data with the edited values
+    // Update the account data with the edited values
     const index = account.value.findIndex((c) => c.id === editingAccount.value.id);
     account.value[index].incharge = editingAccount.value.incharge;
     account.value[index].office = editingAccount.value.office;
@@ -77,7 +77,7 @@ const categories = ref([
 ]);
 
 const editingCategory = ref(null);
-const newCategory = ref({ name: '', description: '' }); // New category object
+const newCategory = ref({ name: '', date: '',time:'' }); // New category object
 
 const editCategory = (category) => {
   editingCategory.value = { ...category.data }; // Set editingCategory to the selected category's data
@@ -88,7 +88,8 @@ const saveEditedCategory = () => {
     // Update the category data with the edited values
     const index = categories.value.findIndex((c) => c.id === editingCategory.value.id);
     categories.value[index].name = editingCategory.value.name;
-    categories.value[index].description = editingCategory.value.description;
+    categories.value[index].date = editingCategory.value.date;
+    categories.value[index].time = editingCategory.value.time;
     editingCategory.value = null;
   }
 };
@@ -101,19 +102,21 @@ const deleteCategory = (category) => {
 };
 
 const addCategory = () => {
-  if (newCategory.value.name && newCategory.value.description) {
+  if (newCategory.value.name && newCategory.value.time) {
     // Generate a new unique ID (replace with your actual ID generation logic)
     const newId = Math.max(...categories.value.map((c) => c.id)) + 1;
     newCategory.value.id = newId;
     categories.value.push({ ...newCategory.value });
     // Clear the form for the next addition
     newCategory.value.name = '';
-    newCategory.value.description = '';
+    newCategory.value.date = '';
+    newCategory.value.time = '';
   }
 };
 </script>
 
 <template>
+  <!-- Account Information -->
   <div>
     <h1>Account Information</h1>
     <DataTable :value="account" tableStyle="min-width: 50rem">
@@ -167,7 +170,7 @@ const addCategory = () => {
       </form>
     </div>
   </div>
-
+  <!-- Visitor Information -->
   <div>
     <h1>Visitor Information</h1>
     <DataTable :value="categories" tableStyle="min-width: 50rem">
@@ -193,8 +196,12 @@ const addCategory = () => {
           <InputText id="editedName" v-model="editingCategory.name" />
         </div>
         <div>
-          <label for="editedDescription">Description:</label>
-          <InputText id="editedDescription" v-model="editingCategory.description" />
+          <label for="editedDate">Date:</label>
+          <InputText id="editedDate" v-model="editingCategory.date" />
+        </div>
+        <div>
+          <label for="editedTime">Time:</label>
+          <InputText id="editedTime" v-model="editingCategory.time" />
         </div>
         <div>
           <Button label="Save" icon="pi pi-check" class="p-button-success" type="submit" />
@@ -212,8 +219,12 @@ const addCategory = () => {
           <InputText id="newName" v-model="newCategory.name" />
         </div>
         <div>
-          <label for="newDescription">Description:</label>
-          <InputText id="newDescription" v-model="newCategory.description" />
+          <label for="newDate">Date:</label>
+          <InputText id="newDate" v-model="newCategory.date" />
+        </div>
+        <div>
+          <label for="newTime">Time:</label>
+          <InputText id="newTime" v-model="newCategory.time" />
         </div>
         <div>
           <Button label="Add" icon="pi pi-plus" class="p-button-primary" type="submit" />

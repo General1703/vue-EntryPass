@@ -8,6 +8,11 @@ const items = [
           to: "/",
         },
         {
+          label: "registration",
+          icon: "pi pi-fw pi-home",
+          to: "/registration",
+        },
+        {
           label: "Guard",
           icon: "pi pi-fw pi-list",
           to: "/guard",

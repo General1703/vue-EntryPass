@@ -11,6 +11,7 @@ const categories = ref([
     name: "Alice",
     date: "12/13/23",
     time:"12:13PM",
+    office:"Cashier",
 
   },
   {
@@ -18,11 +19,12 @@ const categories = ref([
     name: "Paul",
     date: "12/13/23",
     time:"12:13PM",
+    office:"Cashier",
   }
 ]);
 
 const editingCategory = ref(null);
-const newCategory = ref({ name: '', description: '' }); // New category object
+const newCategory = ref({ name: '', date: '', time: '', office: ''}); // New category object
 
 const editCategory = (category) => {
   editingCategory.value = { ...category.data }; // Set editingCategory to the selected category's data
@@ -33,7 +35,9 @@ const saveEditedCategory = () => {
     // Update the category data with the edited values
     const index = categories.value.findIndex((c) => c.id === editingCategory.value.id);
     categories.value[index].name = editingCategory.value.name;
-    categories.value[index].description = editingCategory.value.description;
+    categories.value[index].date = editingCategory.value.date;
+    categories.value[index].time = editingCategory.value.time;
+    categories.value[index].office = editingCategory.value.office;
     editingCategory.value = null;
   }
 };
@@ -57,7 +61,9 @@ const addCategory = () => {
     categories.value.push({ ...newCategory.value });
     // Clear the form for the next addition
     newCategory.value.name = '';
-    newCategory.value.description = '';
+    newCategory.value.date = '';
+    newCategory.value.time = '';
+    newCategory.value.office = '';
   }
 };
 </script>
@@ -70,6 +76,7 @@ const addCategory = () => {
       <Column field="name" header="Name"></Column>
       <Column field="date" header="Date"></Column>
       <Column field="time" header="Time"></Column>
+      <Column field="office" header="Office"></Column>
       <Column header="Actions">
         <template #body="rowData">
           <Button label="Edit" icon="pi pi-pencil" class="p-button-info" @click="editCategory(rowData)" />
@@ -88,8 +95,16 @@ const addCategory = () => {
           <InputText id="editedName" v-model="editingCategory.name" />
         </div>
         <div>
-          <label for="editedDescription">Description:</label>
-          <InputText id="editedDescription" v-model="editingCategory.description" />
+          <label for="editedDate">Date:</label>
+          <InputText id="editedDate" v-model="editingCategory.date" />
+        </div>
+        <div>
+          <label for="editedTime">Time:</label>
+          <InputText id="editedTime" v-model="editingCategory.time" />
+        </div>
+        <div>
+          <label for="editedOffice">Office:</label>
+          <InputText id="editedOffice" v-model="editingCategory.office" />
         </div>
         <div>
           <Button label="Save" icon="pi pi-check" class="p-button-success" type="submit" />
@@ -107,9 +122,17 @@ const addCategory = () => {
           <InputText id="newName" v-model="newCategory.name" />
         </div>
         <div>
-          <label for="newDescription">Description:</label>
-          <InputText id="newDescription" v-model="newCategory.description" />
+          <label for="newDate">Date:</label>
+          <InputText id="newDate" v-model="newCategory.date" />
+        </div> 
+        <div>
+          <label for="newTime">Time:</label>
+          <InputText id="newTime" v-model="newCategory.time" />
         </div>
+        <div>
+          <label for="newOffice">Office:</label>
+          <InputText id="newOffice" v-model="newCategory.office" />
+        </div> 
         <div>
           <Button label="Add" icon="pi pi-plus" class="p-button-primary" type="submit" />
         </div>
