@@ -4,6 +4,7 @@ import admin from "../components/admin.vue";
 import booking from "../components/booking.vue";
 import LogIn from "../components/LogIn.vue";
 import guard from "../components/guard.vue";
+import home from "../components/home.vue";
 import registration from "../components/registration.vue";
 
 const routes = [
@@ -31,6 +32,11 @@ const routes = [
         path: "/registration",
         name: "Registration",
         component: registration,
+      },
+      {
+        path: "/home",
+        name: "Home",
+        component: home,
       },
    
   ];
