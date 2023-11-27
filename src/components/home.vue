@@ -12,7 +12,7 @@ import Button from 'primevue/button';
     </h1>
 
     <router-link to="/booking"><Button label="Book Appointments" /></router-link>
-    <router-link to="/booking"><Button label="View Appointments" /></router-link>
+    <router-link to="/viewapps"><Button label="View Appointments" /></router-link>
     
 
     

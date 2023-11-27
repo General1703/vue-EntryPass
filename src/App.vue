@@ -28,10 +28,16 @@ const items = [
           to: "/booking",
         },
         {
+          label: "View Appointment",
+          icon: "pi pi-fw pi-user",
+          to: "/viewapps",
+        },
+        {
           label: "Home",
           icon: "pi pi-fw pi-user",
           to: "/home",
         },
+        
       ];
 </script>
 

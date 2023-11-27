@@ -5,11 +5,11 @@ import booking from "../components/booking.vue";
 import LogIn from "../components/LogIn.vue";
 import guard from "../components/guard.vue";
 import home from "../components/home.vue";
+import viewapps from "../components/viewapps.vue";
 import registration from "../components/registration.vue";
 
 const routes = [
-    {
-      path: "/",
+{      path: "/",
       name: "LogIn",
       component: LogIn,
     },
@@ -37,6 +37,16 @@ const routes = [
         path: "/home",
         name: "Home",
         component: home,
+      },
+      {
+        path: "/viewapps",
+        name: "View Appointments",
+        component: viewapps,
+      },
+      {
+        path: "/home",
+        name: "Home",
+        component:home,
       },
    
   ];
