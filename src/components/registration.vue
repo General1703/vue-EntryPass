@@ -16,6 +16,8 @@ import Button from 'primevue/button';
     <InputText v-model="value1" type="text" size="small" placeholder="First Name" />
     <p>Enter Lastname:</p>
     <InputText v-model="value1" type="text" size="small" placeholder="Last Name" />
+    <p>Enter Password:</p>
+    <InputText v-model="value1" type="text" size="small" placeholder="Password" />
     <Button label="Submit" />
     
 

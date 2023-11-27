@@ -21,4 +21,5 @@ import Button from 'primevue/button';
 </template>
 
 <style scoped>
+
 </style>
