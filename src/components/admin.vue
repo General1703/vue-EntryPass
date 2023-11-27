@@ -210,9 +210,9 @@ const addCategory = () => {
       </form>
     </div>
 
-    <!-- Add Category Form -->
+    <!-- Add Visitor Form -->
     <div>
-      <h2>Add Category</h2>
+      <h2>Add Visitor</h2>
       <form @submit.prevent="addCategory">
         <div>
           <label for="newName">Name:</label>
