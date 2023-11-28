@@ -74,10 +74,8 @@ const addCategory = () => {
       <Column field="date" header="Date"></Column>
       <Column field="time" header="Time"></Column>
       <Column field="office" header="Office"></Column>
-      <Column header="Actions">
-       
-      </Column>
-    </DataTable>
+    
+       </DataTable>
   </div>
 </template>
 
