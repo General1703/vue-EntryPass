@@ -5,7 +5,6 @@ import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
 import { ref } from 'vue';
 
-
 const categories = ref([
   {
     id: 1,

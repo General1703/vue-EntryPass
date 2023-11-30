@@ -37,6 +37,11 @@ const items = [
           icon: "pi pi-fw pi-user",
           to: "/home",
         },
+        {
+          label: "Cashier Office",
+          icon: "pi pi-fw pi-user",
+          to: "/cashierOffice",
+        },
         
       ];
 </script>

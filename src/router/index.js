@@ -6,6 +6,7 @@ import LogIn from "../components/LogIn.vue";
 import guard from "../components/guard.vue";
 import home from "../components/home.vue";
 import viewapps from "../components/viewapps.vue";
+import cashierOffice from "../components/cashierOffice.vue";
 import registration from "../components/registration.vue";
 
 const routes = [
@@ -47,6 +48,11 @@ const routes = [
         path: "/home",
         name: "Home",
         component:home,
+      },
+      {
+        path: "/cashierOffice",
+        name: "Cashier Office",
+        component:cashierOffice,
       },
    
   ];
