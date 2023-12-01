@@ -7,6 +7,11 @@ import Button from 'primevue/button';
 <template>
  <body>
  <div class="frame">
+  <div class="flogos">
+    <img src="/src/assets/uic1.png" class="uic1">
+  <img src="/src/assets/myuic.png" class="myuic">
+</div>
+  
     <p class="username">Username:</p>
     <InputText v-model="value1" type="text" size="small" placeholder="UserName" class="user"/>
     <p class="password">Password:</p>
@@ -31,11 +36,29 @@ height: 1080px;
 left: 0px;
 top: 0px;
 }
+.flogos{
+  align-self: center;
+}
+.myuic{
+  position: absolute;
+width: 167px;
+height: 85px;
+left: 878px;
+top: 239px;
+
+}
+.uic1{
+  position: absolute;
+width: 215px;
+height: 215px;
+left: 850px;
+top: 16px;
+}
 .registerbttn{
   border-radius: 5px;
 }
 .frame{
-  position: absolute;
+  align-self: center;
 width: 786px;
 height: 786px;
 left: 567px;
