@@ -11,7 +11,7 @@ import Button from 'primevue/button';
     <p>Log in</p>
     <InputText v-model="value1" type="text" size="small" placeholder="UserName" />
     <InputText v-model="value1" type="text" size="small" placeholder="Password" />
-    <router-link to="/home"><Button label="Login" /></router-link>
+    <router-link to="/home"><Button label="Login"/></router-link>
     <p>
       <router-link to="/registration">Register here</router-link>
     </p>
