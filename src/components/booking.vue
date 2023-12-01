@@ -6,6 +6,7 @@ import Button from 'primevue/button';
 </script>
 
 <template>
+  <body>
   <div>
    
     <p>First Name:</p>
@@ -23,6 +24,16 @@ import Button from 'primevue/button';
 
     
   </div>
+</body>
 </template>
 
-<style scoped></style>
+<style scoped>
+body {
+background-image: url('/src/assets/bg.png');
+position: absolute;
+width: 1920px;
+height: 1080px;
+left: 0px;
+top: 0px;
+}
+</style>

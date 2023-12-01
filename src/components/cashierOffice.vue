@@ -69,6 +69,7 @@ const addCategory = () => {
 </script>
 
 <template>
+  <body>
   <div>
     <h1>Visitor Information</h1>
     <DataTable :value="categories" tableStyle="min-width: 50rem">
@@ -139,6 +140,16 @@ const addCategory = () => {
       </form>
     </div>
   </div>
+</body>
 </template>
 
-<style scoped></style>
+<style scoped>
+body {
+background-image: url('/src/assets/bg.png');
+position: absolute;
+width: 1920px;
+height: 1080px;
+left: 0px;
+top: 0px;
+}
+</style>
