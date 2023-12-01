@@ -8,7 +8,7 @@ import Button from 'primevue/button';
   <div>
     
     <h1>Entry Pass</h1>
-    <p>Log in ko</p>
+    <p>Log in</p>
     <InputText v-model="value1" type="text" size="small" placeholder="UserName" />
     <InputText v-model="value1" type="text" size="small" placeholder="Password" />
     <router-link to="/home"><Button label="Login" /></router-link>
