@@ -1,109 +1,109 @@
 <script setup>
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
-
 </script>
 
 <template>
  <body>
  <div class="frame">
- 
+ <div class="form">
+  <form class="logos">
   <img src="/src/assets/uic1.png" class="uic1">
   <img src="/src/assets/myuic.png" class="myuic">
-
-    <InputText v-model="value1" type="text" size="small" placeholder="UserName" class="user"/>
-    <InputText v-model="value2" type="text" size="small" placeholder="Password" class="pass"/>
-    <router-link to="/home" class="login"><Button label="Login"/></router-link>
-    <p>
-      <router-link to="/registration" class="registerbttn">Register here</router-link>
-    </p>
-
-    
+</form>
+<form class="loginform">
+  <InputText class="user" v-model="value1" type="text" size="small" placeholder="Username"/>
+  <InputText class="pass" v-model="value2" type="text" size="small" placeholder="Password"/>
+  <router-link to="/home" class="login"><Button label="Login"/></router-link>
+   <p>
+      <router-link to="/registration">Register here</router-link>
+   </p>
+  </form> 
   </div>
+</div>
 </body>
 </template>
 
 
 <style scoped>
+.frame{
+  width: 786px;
+  height: 786px;
+  padding: 8% 0 0;
+  margin: auto;
+  
+ 
+}
+.form{
+  width: 786px;
+  height: 786px;
+  padding: 8% 0 0;
+  margin: auto;
+  background-color:rgba(217, 217, 217, 85%);
+}
 body {
   background-image: url('/src/assets/bg.png');
-  position: absolute;
+  position: relative;
 width: 1920px;
 height: 1080px;
 left: 0px;
 top: 0px;
 }
-.flogos{
-  align-self: center;
-}
 .myuic{
-  position: absolute;
-width: 167px;
-height: 85px;
-left: 878px;
-top: 239px;
+position: relative;
+margin: auto;
+height:85px;
+width:167px;
+display: block;
 
 }
 .uic1{
-  position: absolute;
-width: 215px;
-height: 215px;
-left: 850px;
-top: 16px;
+position: relative;
+margin:auto;
+height:125px;
+width:125px;
+display: block;
+padding-bottom: 8px;
 }
-.registerbttn{
-  border-radius: 5px;
-}
-.frame{
-  
-width: 786px;
-height: 786px;
-left: 567px;
-top: 173px;
 
-background: rgba(217, 217, 217, 0.85);
-mix-blend-mode: hard-light;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 .user{
-position: center;
-padding-top: 10px;
-padding-bottom: 10px;
-width: 358px;
-height: 71px;
-left: 878px;
-top: 449px;
-
-background: #FFFDFD;
+  display: block;
+  position: relative;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 51px;
+  margin-left: auto;
+  background: #FFFDFD;
 border-radius: 20px;
+height: 71px;
+width: 371px;
 }
 .pass{
-  position: center;
-  padding-top: 10px;
-padding-bottom: 10px;
-width: 358px;
+  display: block;
+  position: relative;
+  margin:auto;
+  background: #FFFDFD;
+  margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+  border-radius: 20px;
 height: 71px;
-left: 878px;
-top: 449px;
-
-background: #FFFDFD;
+width: 371px;
+}
+.logos {
+  margin-bottom: 145px;
+}
+button{
+display: block;
+position: relative;
+margin:auto;
+background-color: #EE8BCC;
 border-radius: 20px;
-}
-.login{
-
-width: 221px;
 height: 58px;
-left: 855px;
-top: 859px;
-
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 50px;
-text-align: center;
-
-color: #FFFFFF;
+width: 221px;
 }
-
+p{
+text-align: center;
+}
 </style>
