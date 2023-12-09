@@ -29,15 +29,13 @@ import Button from 'primevue/button';
 .frame{
   width: 786px;
   height: 786px;
-  padding: 8% 0 0;
+  padding: 1% 0 0;
   margin: auto;
-  
- 
 }
 .form{
   width: 786px;
   height: 786px;
-  padding: 8% 0 0;
+  padding: 2% 0 0;
   margin: auto;
   background-color:rgba(217, 217, 217, 85%);
 }
@@ -105,5 +103,8 @@ width: 221px;
 }
 p{
 text-align: center;
+}
+::placeholder{
+  text-align: center;
 }
 </style>

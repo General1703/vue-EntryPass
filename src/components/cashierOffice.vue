@@ -146,7 +146,7 @@ const addCategory = () => {
 <style scoped>
 body {
 background-image: url('/src/assets/bg.png');
-position: absolute;
+position: relative;
 width: 1920px;
 height: 1080px;
 left: 0px;
