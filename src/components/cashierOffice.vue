@@ -70,6 +70,13 @@ const addCategory = () => {
 
 <template>
   <body>
+    <div class="Whitebackground">
+    <div class="Pinkbackground">
+    <div class="Graybackground">
+  <form class="logos">
+  <img src="/src/assets/uic1.png" class="uic1">
+  <img src="/src/assets/myuic.png" class="myuic">
+</form>
   <div>
     <h1>Visitor Information</h1>
     <DataTable :value="categories" tableStyle="min-width: 50rem">
@@ -140,6 +147,9 @@ const addCategory = () => {
       </form>
     </div>
   </div>
+</div>
+</div>
+</div>
 </body>
 </template>
 
@@ -151,5 +161,42 @@ width: 1920px;
 height: 1080px;
 left: 0px;
 top: 0px;
+}
+.Whitebackground{
+  width: 1747px;
+  height: 887px;
+  padding: 2% 0 0;
+  margin: auto;
+  background-color:rgba(217, 217, 217, 50%);
+}
+.myuic{
+position: relative;
+margin: auto;
+height:85px;
+width:167px;
+display: block;
+
+}
+.uic1{
+position: relative;
+margin:auto;
+height:125px;
+width:125px;
+display: block;
+padding-bottom: 8px;
+}
+.Pinkbackground{
+  width: 1500px;
+  height: 786px;
+  padding: 2% 0 0;
+  margin: auto;
+  background-color:rgba(234, 198, 235, 100%);
+}
+.Graybackground{
+  width: 271px;
+  height: 576px;
+  padding: 2% 0 0;
+  margin: auto;
+  background-color:rgba(184, 184, 184, 100%);
 }
 </style>
