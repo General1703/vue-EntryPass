@@ -6,11 +6,6 @@ import Button from 'primevue/button';
 
 <template>
 <body>
-    
-    <h1>
-        <router-link to="/">back</router-link>
-    </h1>
-    
       
 <div class="form">
       <div class="frame">
@@ -24,6 +19,9 @@ import Button from 'primevue/button';
     <InputText class="uLname" v-model="value1" type="text" size="small" placeholder="Last Name" />
     <InputText class="uPass" v-model="value1" type="text" size="small" placeholder="Password" />
     <router-link to="/home"><Button label="Submit" /></router-link>
+   <p>
+     <router-link class="loginl" to="/LogIn">Already have an account?</router-link>
+   </p>
 </div>
 </div>
 </body>
@@ -119,4 +117,5 @@ text-align: center;
 ::placeholder{
   text-align: center;
 }
+
 </style>
