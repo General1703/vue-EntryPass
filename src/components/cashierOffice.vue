@@ -193,6 +193,7 @@ padding-bottom: 8px;
   background-color:rgba(234, 198, 235, 100%);
 }
 .Graybackground{
+  
   width: 271px;
   height: 576px;
   padding: 2% 0 0;
