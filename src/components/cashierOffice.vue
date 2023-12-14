@@ -153,6 +153,7 @@ const addCategory = () => {
 </body>
 </template>
 
+
 <style scoped>
 body {
 background-image: url('/src/assets/bg.png');
